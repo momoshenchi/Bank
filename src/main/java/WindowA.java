@@ -23,28 +23,16 @@ public class WindowA extends AbstractWindow
     public WindowA()
     {
         finishList = new ArrayList<>();
-        on=false;
-        customer=null;
+        on = false;
+        customer = null;
     }
 
+
     @Override
-    public void run()
+    public void  process()
     {
-        while (Bank.isDayEnd || !Bank.waitList.isEmpty())
-        {
-            while (!on)
-            {
-                synchronized (Bank.waitList)
-                {
-                    if (!Bank.waitList.isEmpty())
-                    {
-                        customer = Bank.waitList.get(0);
-                        Bank.waitList.remove(0);
-                        on = true;
-                    }
-                }
-            }
-            sleep();
-        }
+        customer = Bank.waitList.get(0);
+        Bank.waitList.remove(0);
+        on = true;
     }
 }

@@ -17,10 +17,20 @@ public class BankTest
     @BeforeClass
     public static  void init()
     {
-        Bank b=new Bank();
+
 
     }
-
-
+    @Test
+    public void  testRun()
+    {
+        Bank b=new Bank();
+        b.run();
+    }
+    @Test
+    public  void  testSimulation()
+    {
+        Bank b=new Bank();
+        b.simulation(13.00,18.00);
+    }
 
 }

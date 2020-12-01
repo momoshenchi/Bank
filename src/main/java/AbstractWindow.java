@@ -24,21 +24,53 @@ public abstract class AbstractWindow extends Thread
         SecureRandom sr = new SecureRandom();
         return sr.nextInt(end - start + 1) + start;
     }
-    public void  sleep()
+
+    public void sleep()
     {
         try
         {
-            int time=getSleepTime(customer.getBusinessEnum().start,customer.getBusinessEnum().end);
+            int time = getSleepTime(customer.getBusinessEnum().start, customer.getBusinessEnum().end);
             Thread.sleep(time);
             on = false;
             customer.setEndTime(new Date());
             finishList.add(customer);
-            customer=null;
+            customer = null;
         }
         catch (InterruptedException e)
         {
             e.printStackTrace();
         }
+
+    }
+
+    @Override
+    public void run()
+    {
+        while (!Thread.currentThread().isInterrupted())
+        {
+            synchronized (Bank.waitList)
+            {
+                if (!Bank.waitList.isEmpty())
+                {
+                    process();
+                }
+            }
+            if (on)
+            {
+                sleep();
+            }
+
+            synchronized (Bank.isDayEnd)
+            {
+                if (Bank.waitList.isEmpty() && !Bank.isDoorOpen)
+                {
+                    Bank.isDayEnd.add(Thread.currentThread().getName());
+                }
+            }
+        }
+    }
+    public void  process()
+    {
 
     }
 }

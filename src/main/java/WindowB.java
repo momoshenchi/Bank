@@ -12,8 +12,8 @@ public class WindowB extends AbstractWindow
     public WindowB()
     {
         finishList = new ArrayList<>();
-        on=false;
-        customer=null;
+        on = false;
+        customer = null;
     }
 
     static
@@ -28,31 +28,21 @@ public class WindowB extends AbstractWindow
         businessType.add(7);
     }
 
-    @Override
-    public void run()
-    {
 
-        while (Bank.isDayEnd || !Bank.waitList.isEmpty())
+    @Override
+    public void  process()
+    {
+        for (int i = 0; i < Bank.waitList.size(); ++i)
         {
-            while (!on)
+            Customer tem = Bank.waitList.get(i);
+            int item = tem.getBusinessEnum().itemNum;
+            if (businessType.contains(item))
             {
-                synchronized (Bank.waitList)
-                {
-                    for (int i = 0; i < Bank.waitList.size(); ++i)
-                    {
-                        Customer tem = Bank.waitList.get(i);
-                        int item = tem.getBusinessEnum().itemNum;
-                        if (businessType.contains(item))
-                        {
-                            customer = tem;
-                            on = true;
-                            Bank.waitList.remove(i);
-                            break;
-                        }
-                    }
-                }
+                customer = tem;
+                Bank.waitList.remove(i);
+                on = true;
+                break;
             }
-            sleep();
         }
     }
 }

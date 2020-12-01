@@ -21,43 +21,28 @@ public class WindowV extends AbstractWindow
     public WindowV()
     {
         finishList = new ArrayList<>();
-        on=false;
-        customer=null;
+        on = false;
+        customer = null;
     }
-
     @Override
-    public void run()
+    public void  process()
     {
-
-        while (Bank.isDayEnd || !Bank.waitList.isEmpty())
+        for (int i = 0; i < Bank.waitList.size(); ++i)
         {
-            while (!on)
+            Customer tem = Bank.waitList.get(i);
+            if (tem.isVIP())
             {
-                synchronized (Bank.waitList)
-                {
-                    for (int i = 0; i < Bank.waitList.size(); ++i)
-                    {
-                        Customer tem = Bank.waitList.get(i);
-                        if (tem.isVIP())
-                        {
-                            customer = tem;
-                            on = true;
-                            Bank.waitList.remove(i);
-                            break;
-                        }
-                    }
-                    if (!on)
-                    {
-                        if (!Bank.waitList.isEmpty())
-                        {
-                            customer = Bank.waitList.get(0);
-                            on = true;
-                            Bank.waitList.remove(0);
-                        }
-                    }
-                }
+                customer = tem;
+                on = true;
+                Bank.waitList.remove(i);
+                break;
             }
-            sleep();
+        }
+        if (!on)
+        {
+            customer = Bank.waitList.get(0);
+            on = true;
+            Bank.waitList.remove(0);
         }
     }
 }

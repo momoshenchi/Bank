@@ -14,8 +14,8 @@
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,7 +41,7 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -60,43 +60,55 @@
       <recent name="D:\Program Files (x86)\java\workspace\Bank\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankTest">
-    <configuration name="Bank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bank" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Exercise9_02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise9_02" />
       <module name="Bank" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Producer" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Bank" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Time" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Bank" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankTest.testRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Bank" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BankTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testRun" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest.testSimulation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testSimulation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BankTest" />
-        <item itemvalue="Application.Bank" />
-        <item itemvalue="Application.Time" />
-        <item itemvalue="Application.Producer" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.BankTest.testRun" />
+        <item itemvalue="Application.Exercise9_02" />
+        <item itemvalue="JUnit.BankTest.testSimulation" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -123,6 +135,15 @@
       <workItem from="1605795181198" duration="3767000" />
       <workItem from="1605837092786" duration="323000" />
       <workItem from="1605840025483" duration="680000" />
+      <workItem from="1606043496024" duration="19000" />
+      <workItem from="1606109956410" duration="2534000" />
+      <workItem from="1606202882223" duration="5080000" />
+      <workItem from="1606211093956" duration="12923000" />
+      <workItem from="1606262845979" duration="5070000" />
+      <workItem from="1606269351854" duration="39000" />
+      <workItem from="1606270459030" duration="105000" />
+      <workItem from="1606291749410" duration="4349000" />
+      <workItem from="1606745737945" duration="566000" />
     </task>
     <servers />
   </component>
@@ -143,11 +164,12 @@
       <screen x="1920" y="-158" width="2048" height="1112" />
     </state>
     <state x="2256" y="151" width="1275" height="664" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1474.864/1920.-158.2048.1112@1920.-158.2048.1112" timestamp="1605797352190" />
-    <state x="815" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1605689078542">
+    <state x="815" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1606266051958">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
+    <state x="3018" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864/1920.-158.1986.1152@1920.-158.1986.1152" timestamp="1606220363104" />
     <state x="2558" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864/1920.-158.2048.1112@1920.-158.2048.1112" timestamp="1605608867821" />
-    <state x="815" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864@0.0.1474.864" timestamp="1605689078542" />
+    <state x="815" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864@0.0.1474.864" timestamp="1606266051958" />
     <state x="2718" y="260" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605697592712">
       <screen x="1920" y="-158" width="2048" height="1112" />
     </state>
@@ -160,33 +182,54 @@
       <screen x="1920" y="-158" width="2048" height="1112" />
     </state>
     <state x="2602" y="172" key="ConfigureClientPropertiesDialog/0.0.1474.864/1920.-158.2048.1112@1920.-158.2048.1112" timestamp="1605790489950" />
-    <state width="1417" height="410" key="GridCell.Tab.0.bottom" timestamp="1605837433649">
-      <screen x="1920" y="-158" width="2048" height="1112" />
+    <state width="1416" height="176" key="GridCell.Tab.0.bottom" timestamp="1606296456036">
+      <screen x="1920" y="-158" width="1986" height="1152" />
     </state>
+    <state width="1416" height="176" key="GridCell.Tab.0.bottom/0.0.1474.864/1920.-158.1986.1152@1920.-158.1986.1152" timestamp="1606296456036" />
     <state width="1417" height="410" key="GridCell.Tab.0.bottom/0.0.1474.864/1920.-158.2048.1112@1920.-158.2048.1112" timestamp="1605837433649" />
-    <state width="1416" height="2" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1605775168749" />
-    <state width="1417" height="410" key="GridCell.Tab.0.center" timestamp="1605837433649">
-      <screen x="1920" y="-158" width="2048" height="1112" />
+    <state width="1416" height="53" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1606268301287" />
+    <state width="1416" height="176" key="GridCell.Tab.0.center" timestamp="1606296456036">
+      <screen x="1920" y="-158" width="1986" height="1152" />
     </state>
+    <state width="1416" height="176" key="GridCell.Tab.0.center/0.0.1474.864/1920.-158.1986.1152@1920.-158.1986.1152" timestamp="1606296456036" />
     <state width="1417" height="410" key="GridCell.Tab.0.center/0.0.1474.864/1920.-158.2048.1112@1920.-158.2048.1112" timestamp="1605837433649" />
-    <state width="1416" height="2" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1605775168749" />
-    <state width="1417" height="410" key="GridCell.Tab.0.left" timestamp="1605837433648">
-      <screen x="1920" y="-158" width="2048" height="1112" />
+    <state width="1416" height="53" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1606268301287" />
+    <state width="1416" height="176" key="GridCell.Tab.0.left" timestamp="1606296456036">
+      <screen x="1920" y="-158" width="1986" height="1152" />
     </state>
+    <state width="1416" height="176" key="GridCell.Tab.0.left/0.0.1474.864/1920.-158.1986.1152@1920.-158.1986.1152" timestamp="1606296456036" />
     <state width="1417" height="410" key="GridCell.Tab.0.left/0.0.1474.864/1920.-158.2048.1112@1920.-158.2048.1112" timestamp="1605837433648" />
-    <state width="1416" height="2" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1605775168749" />
-    <state width="1417" height="410" key="GridCell.Tab.0.right" timestamp="1605837433649">
-      <screen x="1920" y="-158" width="2048" height="1112" />
+    <state width="1416" height="53" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1606268301287" />
+    <state width="1416" height="176" key="GridCell.Tab.0.right" timestamp="1606296456036">
+      <screen x="1920" y="-158" width="1986" height="1152" />
     </state>
+    <state width="1416" height="176" key="GridCell.Tab.0.right/0.0.1474.864/1920.-158.1986.1152@1920.-158.1986.1152" timestamp="1606296456036" />
     <state width="1417" height="410" key="GridCell.Tab.0.right/0.0.1474.864/1920.-158.2048.1112@1920.-158.2048.1112" timestamp="1605837433649" />
-    <state width="1416" height="2" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1605775168749" />
+    <state width="1416" height="53" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1606268301287" />
+    <state width="1416" height="274" key="GridCell.Tab.1.bottom" timestamp="1606294748163">
+      <screen x="1920" y="-158" width="1986" height="1152" />
+    </state>
+    <state width="1416" height="274" key="GridCell.Tab.1.bottom/0.0.1474.864/1920.-158.1986.1152@1920.-158.1986.1152" timestamp="1606294748163" />
+    <state width="1416" height="274" key="GridCell.Tab.1.center" timestamp="1606294748162">
+      <screen x="1920" y="-158" width="1986" height="1152" />
+    </state>
+    <state width="1416" height="274" key="GridCell.Tab.1.center/0.0.1474.864/1920.-158.1986.1152@1920.-158.1986.1152" timestamp="1606294748162" />
+    <state width="1416" height="274" key="GridCell.Tab.1.left" timestamp="1606294748162">
+      <screen x="1920" y="-158" width="1986" height="1152" />
+    </state>
+    <state width="1416" height="274" key="GridCell.Tab.1.left/0.0.1474.864/1920.-158.1986.1152@1920.-158.1986.1152" timestamp="1606294748162" />
+    <state width="1416" height="274" key="GridCell.Tab.1.right" timestamp="1606294748163">
+      <screen x="1920" y="-158" width="1986" height="1152" />
+    </state>
+    <state width="1416" height="274" key="GridCell.Tab.1.right/0.0.1474.864/1920.-158.1986.1152@1920.-158.1986.1152" timestamp="1606294748163" />
     <state x="2352" y="79" key="Maven.ArtifactSearchDialog" timestamp="1605787871896">
       <screen x="1920" y="-158" width="2048" height="1112" />
     </state>
     <state x="2352" y="79" key="Maven.ArtifactSearchDialog/0.0.1474.864/1920.-158.2048.1112@1920.-158.2048.1112" timestamp="1605787871896" />
-    <state x="2496" y="104" key="SettingsEditor" timestamp="1605796494188">
-      <screen x="1920" y="-158" width="2048" height="1112" />
+    <state x="414" y="154" key="SettingsEditor" timestamp="1606746095376">
+      <screen x="0" y="0" width="1472" height="864" />
     </state>
+    <state x="414" y="154" key="SettingsEditor/0.0.1472.864/1920.-158.1986.1152@0.0.1472.864" timestamp="1606746095376" />
     <state x="2496" y="104" key="SettingsEditor/0.0.1474.864/1920.-158.2048.1112@1920.-158.2048.1112" timestamp="1605796494188" />
     <state x="2739" y="175" key="chooseDestDirectoryDialog" timestamp="1605607775619">
       <screen x="1920" y="-158" width="2048" height="1112" />
