@@ -7,7 +7,7 @@ import java.util.Date;
  * @author: momoshenchi
  * @date: 2020/11/17 - 16:38
  */
-public class Customer implements Serializable, Comparable
+public class BeanCustomer implements Serializable, Comparable
 {
 
     private String name;
@@ -17,7 +17,7 @@ public class Customer implements Serializable, Comparable
     private Date startTime;
     private Date endTime;
 
-    public Customer(String name, boolean isVIP, BusinessEnum businessEnum, Date time)
+    public BeanCustomer(String name, boolean isVIP, BusinessEnum businessEnum, Date time)
     {
         this.name = name;
         this.isVIP = isVIP;
@@ -25,7 +25,7 @@ public class Customer implements Serializable, Comparable
         this.startTime = time;
     }
 
-    public Customer()
+    public BeanCustomer()
     {
     }
 
@@ -85,7 +85,7 @@ public class Customer implements Serializable, Comparable
         {
             return -1;
         }
-        Customer c = (Customer) o;
+        BeanCustomer c = (BeanCustomer) o;
         if (c.isVIP == isVIP())
             return startTime.compareTo(c.startTime);
         else

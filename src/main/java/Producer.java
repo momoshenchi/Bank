@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.security.SecureRandom;
@@ -59,7 +58,7 @@ public class Producer implements Runnable
     {
         synchronized (Bank.waitList)
         {
-            Customer c = new Customer();
+            BeanCustomer c = new BeanCustomer();
             double is = sr.nextDouble();
             c.setStartTime(new Date());
             if (is <= VIPPOSSIBILITY)
